@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #2e2e2e;
+  color: #ffffff;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+nav a {
+  margin: 0 1.5rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #555;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+  background: linear-gradient(90deg,rgba(8, 0, 0, 1) 0%, rgba(43, 43, 43, 1) 50%, rgba(8, 0, 0, 1) 100%);
+  background-size: cover;
+  background-position: center; /* Add your image path */
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  border-radius: 8px;
+  background-image: url('pro2.jpg'); /* Add your image path */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.447);
+}
+
+.intro {
+  max-width: 600px;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.download-btn {
+  padding: 0.8rem 1.5rem;
+  background: #f99e02;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.download-btn:hover {
+  background: #2c3a9b;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-section {
+  background-image: url('https://media.istockphoto.com/id/1294603953/vector/abstract-black-stripes-diagonal-background.jpg?s=612x612&w=0&k=20&c=nQZHTk-o97cNVqWnUe8BJg0A5jQG0tqylquzbt9YtcQ=');
+  padding: 4rem 2rem;
+  color: white;
+}
+
+.gallery-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.gallery-item {
+  background-color: #444;
+  height: 200px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+.gallery-item.logo {
+  background-image: url('da.jpg'); /* Replace with your image path */
+}
+
+.gallery-item.poster {
+  background-image: url('retro3.png');
+}
+
+.gallery-item.web {
+  background-image: url('landing-page-web-header-colorful-line-background-design-vector.jpg');
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  gap: 2rem;
+}
+
+.social-media a {
+  color: #000000;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: #ff0000;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: #ccc;
+}
